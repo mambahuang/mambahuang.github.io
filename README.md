@@ -1,37 +1,104 @@
-## Welcome to GitHub Pages
+# Bingo By Themefisher
 
-You can use the [editor on GitHub](https://github.com/mambahuang/mambahuang.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+BINGO is a powerful Bootstrap Business Template from the Themefisher team. By using this theme, it will be possible for you to make your startup/business website and so on.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!-- demo -->
+## Example Site
 
-### Markdown
+| [![](screenshots/homepage.png)](https://demo.themefisher.com/themefisher/bingo/) | [![](screenshots/about.png)](https://demo.themefisher.com/themefisher/bingo/about.html) | [![](screenshots/service.png)](https://demo.themefisher.com/themefisher/bingo/service.html) |
+|:---:|:---:|:---:|
+| **Homepage 1**  | **About**  | **Service**  |
+| [![](screenshots/portfolio.png)](https://demo.themefisher.com/themefisher/bingo/portfolio.html) | [![](screenshots/contact.png)](https://demo.themefisher.com/themefisher/bingo/contact.html) | [![](screenshots/404.png)](https://demo.themefisher.com/themefisher/bingo/404.html) |
+| **Portfolio** | **Contact** | **404** |
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+👉🏻[View Live Preview](https://demo.themefisher.com/themefisher/bingo/)
 
-```markdown
-Syntax highlighted code block
+<!-- download -->
+## Download And installation
 
-# Header 1
-## Header 2
-### Header 3
+Download this template from [Github](https://github.com/themefisher/bingo/archive/main.zip)
 
-- Bulleted
-- List
+<!-- installation -->
+### Basic Usages
 
-1. Numbered
-2. List
+After downloading the template, you can simply edit the HTML and CSS files from the `theme` folder. To preview the changes you make to the code, you can open the index.html file in your web browser.
 
-**Bold** and _Italic_ and `Code` text
+### Advanced Usage
 
-[Link](url) and ![Image](src)
+For advanced usage, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
+
+#### Install prerequisites (once for a machine)
+
+* **Node Installation:** [Install node js](https://nodejs.org/en/download/)
+* **Gulp Installation:** Install gulp globally from your terminal
+
+```
+npm install --global gulp-cli
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Or visit the original [Gulp docs](https://gulpjs.com/docs/en/getting-started/quick-start)
 
-### Jekyll Themes
+#### Local setup
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mambahuang/mambahuang.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+After successfully installing those dependencies, open this theme with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
 
-### Support or Contact
+* Install dependencies
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+```
+npm install
+```
+
+* Run locally
+
+```
+npm run dev
+```
+
+After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live reload the browser when changes are saved.
+
+#### Production Build
+
+After finishing all the customization, you can create a production build by running this command.
+
+```
+npm run build
+```
+
+Now you get a `theme` folder that has all the changes you have made. you can use this folder as your main theme.
+
+👉🏻 [visit documentation](https://docs.themefisher.com/bingo/)
+
+<!-- reporting issue -->
+## Reporting Issues
+
+We use GitHub Issues as the official bug tracker for the Meghna Template. Please Search [existing issues](https://github.com/themefisher/bingo/issues). Someone may have already reported the same problem.
+If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/bingo/issues).
+
+<!-- support -->
+## Technical Support or Questions (Paid)
+
+If you have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.
+
+<!-- licence -->
+## License
+
+Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+
+**Code License:** Released under the [MIT](https://github.com/themefisher/bingo/blob/main/LICENSE) license.
+
+**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+
+<!-- resources -->
+## Resources
+
+Some third-party plugins that we used to build this template. Please check their license.
+
+* **Bootstrap v4.5**: <https://getbootstrap.com/docs/4.5/getting-started/introduction/>
+* **Jquery v3.5.1**: <https://jquery.com/download/>
+* **Google Fonts**: <http://fonts.google.com/>
+* **Animate CSS**: <https://animate.style/>
+* **Lightbox2**: <https://lokeshdhakar.com/projects/lightbox2/>
+* **Filterizr**: <https://yiotis.net/filterizr/>
+* **jQuery Parallax**: <https://ianlunn.co.uk/plugins/jquery-parallax/>
+* **Slick**: <https://kenwheeler.github.io/slick/>
+* **Smooth Scroll**: <https://github.com/cferdinandi/smooth-scroll/>
