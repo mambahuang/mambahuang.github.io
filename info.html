@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Information</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="info-container">
+        <span id="close-card" class="close-card">&times;</span>
+        <div id="info-content"></div>
+    </div>
+
+    <script>
+        // Function to get query parameters
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Display info based on query parameter
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageId = getQueryParam('image');
+            const infoContent = document.getElementById('info-content');
+
+            // Display content based on imageId
+            const infoTexts = {
+                '1': 'Camera - A high-quality camera with excellent features.',
+                '2': 'Bottle - A sleek and stylish bottle for your beverages.',
+                '3': 'Poster - A vibrant poster that adds color to any room.',
+                '4': 'Sunglasses - Fashionable sunglasses to protect your eyes.',
+                '5': 'Sunscreen - Essential sunscreen to protect your skin from the sun.'
+            };
+
+            infoContent.textContent = infoTexts[imageId] || 'No information available.';
+        });
+
+        // Close button functionality
+        document.getElementById('close-card').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

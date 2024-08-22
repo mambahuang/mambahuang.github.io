@@ -3,29 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Images</title>
+    <title>Interactive Squares and Rectangles</title>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-
     <div class="container">
-        <div class="image-container">
-            <img src="./assets/images/sunglassesNoBG.png" alt="Sunglasses" class="image" onclick="showInfo('info1')">
-            <div id="info1" class="info-box">These are stylish sunglasses with a unique design.</div>
+        <div class="square1" data-info="Camera - A high-quality camera" onclick="showInfo('Camera - A high-quality camera')">
+            <img src="./assets/images/cameraNoBG.png" alt="Dynamic Image 1">
+            <div class="hover-text">Camera - A high-quality camera</div>
         </div>
-        
-        <div class="image-container">
-            <img src="./assets/images/posterNoBG.png" alt="Book Cover" class="image" onclick="showInfo('info2')">
-            <div id="info2" class="info-box">This is the cover of James Joyce's 'Ulysses'.</div>
+        <div class="rectangle1" data-info="Bottle - A sleek bottle" onclick="showInfo('Bottle - A sleek bottle')">
+            <img src="./assets/images/bottleNoBG.png" alt="Dynamic Image 2">
+            <div class="hover-text">Bottle - A sleek bottle</div>
         </div>
-
-        <div class="image-container">
-            <img src="./assets/images/cameraNoBG.png" alt="Camera" class="image" onclick="showInfo('info3')">
-            <div id="info3" class="info-box">This is a vintage Kodak disposable camera.</div>
+        <div class="square2" data-info="Poster - A colorful poster" onclick="showInfo('Poster - A colorful poster')">
+            <img src="./assets/images/posterNoBG.png" alt="Dynamic Image 3">
+            <div class="hover-text">Poster - A colorful poster</div>
+        </div>
+        <div class="rectangle2" data-info="Sunglasses - Stylish sunglasses" onclick="showInfo('Sunglasses - Stylish sunglasses')">
+            <img src="./assets/images/sunglassesNoBG.png" alt="Dynamic Image 4">
+            <div class="hover-text">Sunglasses - Stylish sunglasses</div>
+        </div>
+        <div class="square3" data-info="Sunscreen - Essential sunscreen" onclick="showInfo('Sunscreen - Essential sunscreen')">
+            <img src="./assets/images/sunscreensNoBG.png" alt="Dynamic Image 5">
+            <div class="hover-text">Sunscreen - Essential sunscreen</div>
         </div>
     </div>
 
-    <script src="main.js"></script>
-    
+    <!-- Floating Info Card -->
+    <div id="info-card" class="info-card">
+        <span id="close-card" class="close-card">&times;</span>
+        <div id="info-content"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
